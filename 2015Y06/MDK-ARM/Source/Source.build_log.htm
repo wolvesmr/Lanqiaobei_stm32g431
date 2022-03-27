@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Administrator, 1, LIC=W9645-GVMYB-KT33H-WNB6B-TF580-5TINR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  D:\18.keil5arm\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.31.18.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+E:\3北京邮电大学世纪学院\7.淘宝店\0.2 蓝桥杯嵌入式教程\3.历年省赛真题教程\1.【蚂蚁工厂科技】资料盘\3.视频配套源代码\2015Y06\MDK-ARM\Source.uvprojx
+Project File Date:  09/10/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\18.keil5arm\ARM\ARMCC\Bin'
+Build target 'Source'
+compiling main.c...
+..\Inc\bsp\I2C\bsp_i2c.h(19): warning:  #1-D: last line of file ends without a newline
+  uint8_t read_resistor(void);
+../Src/main.c(292): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		R37_Voltage = ((((float)getADC2())/4096)*3.3);
+../Src/main.c(299): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf((char *)Lcd_Disp_String, "    V1:%4.2fV",R37_Voltage);
+../Src/main.c(318): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf((char *)Lcd_Disp_String, "       Setting");
+../Src/main.c(376): warning:  #223-D: function "sprintf" declared implicitly
+  				sprintf(str, "%4.2f+%3.1f+%02d%02d%02d\n", R37_Voltage,(k_int*0.1),(unsigned int)H_M_S_Time.Hours,(unsigned int)H_M_S_Time.Minutes,(unsigned int)H_M_S_Time.Seconds);
+../Src/main.c(377): warning:  #223-D: function "strlen" declared implicitly
+  				HAL_UART_Transmit(&huart1,(unsigned char *)str, strlen(str), 50);			
+../Src/main.c(393): warning:  #223-D: function "sprintf" declared implicitly
+  					sprintf(str, "OK\n");
+../Src/main.c(394): warning:  #223-D: function "strlen" declared implicitly
+  					HAL_UART_Transmit(&huart1,(unsigned char *)str, strlen(str), 50);		
+../Src/main.c(481): warning:  #9-D: nested comment is not allowed
+  /******************************************************************************
+../Src/main.c(482): warning:  #9-D: nested comment is not allowed
+  /******************************************************************************
+../Src/main.c(483): warning:  #9-D: nested comment is not allowed
+  /******************************************************************************
+../Src/main.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=21962 RO-data=5322 RW-data=84 ZI-data=2220  
+FromELF: creating hex file...
+"Source\Source.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.4.0.pack
+                Keil.STM32G4xx_DFP.1.4.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Source
+  D:\18.keil5arm\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  D:\18.keil5arm\Keil\STM32G4xx_DFP\1.4.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+Build Time Elapsed:  00:00:11
+</pre>
+</body>
+</html>
